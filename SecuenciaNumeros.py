@@ -5,7 +5,10 @@ class SecuenciaNumeros:
             return [0,0,0,0]
         else:
             numeros = cadena.split(",")
-            intNumeros = map(int, numeros)
+            intNumeros = list(map(int, numeros))
 
-            return [len(numeros),min(intNumeros),0,0]
+            minimo = min(intNumeros)
+            maximo = max(intNumeros)
+
+            return [len(numeros),minimo,maximo,0]
 
