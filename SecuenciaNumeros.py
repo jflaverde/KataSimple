@@ -1,5 +1,7 @@
 
 class SecuenciaNumeros:
     def procesarElementos(self, cadena):
-        return [0,0,0,0]
+        if cadena=="":
+            return [0,0,0,0]
+        return [int(cadena),0,0,0]
 
