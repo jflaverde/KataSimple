@@ -5,5 +5,7 @@ class SecuenciaNumeros:
             return [0,0,0,0]
         else:
             numeros = cadena.split(",")
-            return [len(numeros),int(numeros[0]),0,0]
+            intNumeros = map(int, numeros)
+
+            return [len(numeros),min(intNumeros),0,0]
 
