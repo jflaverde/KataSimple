@@ -15,4 +15,5 @@ class TestSecuenciaNumerosConUnNumero(TestCase):
 class TestSecuenciaNumerosConMultiplesNumeros(TestCase):
     def test_procesarElementos(self):
         self.assertEqual(SecuenciaNumeros().procesarElementos("1,2,3,4"), [4, 1, 0, 0], "Secuencia con multiples numeros")
+        self.assertEqual(SecuenciaNumeros().procesarElementos("4,3,2,1"), [4, 1, 0, 0], "Secuencia con multiples numeros")
 
