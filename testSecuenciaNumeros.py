@@ -20,3 +20,7 @@ class TestSecuenciaNumerosConMultiplesNumeros(TestCase):
 class TestSecuenciaNumerosConMultiplesNumerosYAmpersand(TestCase):
     def test_procesarElementos(self):
         self.assertEqual(SecuenciaNumeros().procesarElementos("1&2&3&4"), [4, 1, 4, 2.5], "Secuencia con multiples numeros")
+
+class TestSecuenciaNumerosConMultiplesNumerosYDosPuntos(TestCase):
+    def test_procesarElementos(self):
+        self.assertEqual(SecuenciaNumeros().procesarElementos("1:2:3:4"), [4, 1, 4, 2.5], "Secuencia con multiples numeros")
