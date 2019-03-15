@@ -9,6 +9,7 @@ class SecuenciaNumeros:
 
             minimo = min(intNumeros)
             maximo = max(intNumeros)
+            promedio = sum(intNumeros)/float(len(intNumeros))
 
-            return [len(numeros),minimo,maximo,0]
+            return [len(numeros),minimo,maximo,promedio]
 
